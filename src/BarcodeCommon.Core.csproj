@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>Barcode Bakery - Common</Title>
+    <AssemblyName>BarcodeBakery.Common</AssemblyName>
+    <RootNamespace>BarcodeBakery.Common</RootNamespace>
+    <Description>Base code for generating barcode with the Barcode Bakery library. See BarcodeBakery.Barcode1D.</Description>
+    <Author>Jean-Sébastien Goupil</Author>
+    <Authors>Jean-Sébastien Goupil</Authors>
+    <Copyright>Copyright © Jean-Sébastien Goupil</Copyright>
+    <Version>3.0.0</Version>
+    <PackageId>BarcodeBakery.Common</PackageId>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>barcode</PackageTags>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RepositoryUrl>git://github.com/barcode-bakery/barcode-dotnet-common</RepositoryUrl>
+    <PackageProjectUrl>https://www.barcodebakery.com</PackageProjectUrl>
+    <PackageLicenseUrl>https://www.barcodebakery.com/en/license/eula</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="1.68.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TunnelVisionLabs.ReferenceAssemblyAnnotator" PrivateAssets="All" Version="1.0.0-alpha.160" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageDownload Include="Microsoft.NETCore.App.Ref" Version="[3.0.0]" />
+  </ItemGroup>
+</Project>
